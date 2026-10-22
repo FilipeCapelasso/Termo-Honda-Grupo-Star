@@ -164,12 +164,13 @@ footer{text-align:center;color:var(--mu);font-size:13px;padding:0 16px 40px}
 <script>
 /* ====== PREENCHA estes dados da empresa (o que ficar vazio não aparece na página) ====== */
 const EMPRESA={
-  nome:'Grupo Star',
-  razaoSocial:'',     // ex.: 'Grupo Star Ltda'
-  cnpj:'',            // ex.: '00.000.000/0001-00'
-  endereco:'',
-  email:'',           // e-mail para pedidos de privacidade (LGPD)
-  telefone:''
+  nome:'Star Motos (Grupo Star)',
+  razaoSocial:'',     // preencha se quiser exibir a razão social completa da matriz
+  cnpj:'01.444.283/0001-23 (matriz)',
+  endereco:'Via Chico Mendes, 929, Triângulo Velho (6 de Agosto), Rio Branco, AC',
+  email:'hydarah@grupostar.net.br',
+  telefone:'(68) 3302-3080',
+  whatsapp:'(68) 9924-2029'
 };
 const ATUALIZADO='22 de outubro de 2026';
 /* ======================================================================================= */
@@ -177,7 +178,7 @@ const ATUALIZADO='22 de outubro de 2026';
   const $=i=>document.getElementById(i);
   $('upd').textContent='Última atualização: '+ATUALIZADO;
   $('emp').textContent=EMPRESA.nome||'Grupo Star';
-  const lin=[['Razão social',EMPRESA.razaoSocial],['CNPJ',EMPRESA.cnpj],['Endereço',EMPRESA.endereco],['E-mail de privacidade',EMPRESA.email],['Telefone',EMPRESA.telefone]].filter(x=>x[1]);
+  const lin=[['Razão social',EMPRESA.razaoSocial],['CNPJ',EMPRESA.cnpj],['Endereço',EMPRESA.endereco],['E-mail de privacidade',EMPRESA.email],['Telefone',EMPRESA.telefone],['WhatsApp',EMPRESA.whatsapp]].filter(x=>x[1]);
   if(lin.length){$('idb').hidden=false;$('idl').innerHTML=lin.map(x=>'<dt></dt><dd></dd>').join('');const dts=$('idl').querySelectorAll('dt'),dds=$('idl').querySelectorAll('dd');lin.forEach((x,i)=>{dts[i].textContent=x[0];dds[i].textContent=x[1]})}
   if(EMPRESA.email)$('ctt').textContent=' ou escreva para '+EMPRESA.email;
   $('ft').textContent='© '+new Date().getFullYear()+' '+(EMPRESA.razaoSocial||EMPRESA.nome||'Grupo Star')+'. Todos os direitos reservados.';
