@@ -78,10 +78,12 @@ footer{text-align:center;color:var(--mu);font-size:13px;padding:0 16px 40px}
         <tr><td>Ficha cadastral (financiamento)</td><td>Dados pessoais (nome, nascimento, cidade de nascimento, nome do pai e da mãe, telefone, e-mail, CPF), endereço, contato de referência, ocupação, renda mensal, valor de entrada, moto escolhida, cor da moto e habilitação.</td></tr>
         <tr><td>Pré-contrato de consórcio</td><td>Dados pessoais (nome, telefone, e-mail, CPF, RG e data de emissão, nascimento, cidade de nascimento, filiação), endereço, telefone de recado, ocupação, renda mensal, intenção de lance, moto escolhida e cor da moto.</td></tr>
         <tr><td>Botões de WhatsApp</td><td>Ao tocar para falar com o vendedor, podemos registrar seu interesse (por exemplo, a moto e o plano que você viu) para o vendedor saber do que se trata.</td></tr>
+        <tr><td>Preenchimento em andamento</td><td>Se você começar a preencher um formulário ou o chat e não terminar de enviar, o que já foi digitado (por exemplo nome, telefone, moto e cor) pode ser enviado ao Vendedor para que ele entre em contato e ajude você a concluir. Você pode pedir a exclusão desses dados a qualquer momento.</td></tr>
         <tr><td>Navegação</td><td>Informações técnicas do navegador e preferências guardadas no seu aparelho (veja a seção 9).</td></tr>
       </tbody>
     </table>
     <p class="mu">Ao informar dados de terceiros (como referência pessoal ou filiação), você declara ter autorização para isso.</p>
+    <p class="mu"><b>Preenchimento parcial:</b> enquanto você digita nos formulários, o que já foi preenchido é enviado ao Vendedor (e à administração da plataforma) para que ele possa te ajudar a concluir, mesmo que você não clique em “Enviar”. Se não quiser isso, não preencha o formulário e fale direto pelo WhatsApp.</p>
   </section>
 
   <section class="card" id="s3">
@@ -90,6 +92,7 @@ footer{text-align:center;color:var(--mu);font-size:13px;padding:0 16px 40px}
       <li>Avaliar crédito e fazer simulação ou cotação de financiamento.</li>
       <li>Elaborar proposta ou pré-contrato de consórcio.</li>
       <li>Entrar em contato com você por WhatsApp, telefone ou e-mail para esclarecimentos e para enviar ofertas de produtos e serviços relacionados. Você pode pedir para não receber ofertas.</li>
+      <li>Retomar o contato com quem começou a preencher um formulário e não concluiu o envio.</li>
       <li>Cumprir obrigações legais ou regulatórias e exercer direitos em processos.</li>
       <li>Manter a segurança do site e prevenir fraudes.</li>
     </ul>
@@ -173,7 +176,7 @@ const EMPRESA={
   telefone:'(68) 3302-3080',
   whatsapp:'(68) 9924-2029'
 };
-const ATUALIZADO='22 de outubro de 2026';
+const ATUALIZADO='24 de outubro de 2026';
 /* ======================================================================================= */
 (function(){
   const $=i=>document.getElementById(i);
